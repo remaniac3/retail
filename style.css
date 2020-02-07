@@ -1,0 +1,150 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/******************** CONTAINERS ********************/
+
+.pageFull {
+	padding: 0 6em 0 6em;
+	position: relative;
+	max-width: 100%;
+}
+
+.containerContent {
+	padding: 2em 0 2em 0;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+
+/******************** GRID ********************/
+
+.gridStaff {
+	display: grid;
+	grid-row-gap: 1em;
+	grid-template-columns: 40% 20% 40%;
+	align-items: center;
+}
+
+.gridStaffInfo {
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px 0 4px 0;
+}
+
+.gridStaffLeft {
+	text-align: right;
+}
+
+.gridStaffRight {
+	text-align: left;
+}
+
+
+/******************** CONTAINER: STAFF ********************/
+
+.staffImage {
+	padding-bottom: 2em;
+}
+
+.staffInfo {
+}
+
+
+/******************** CONTAINER: REVIEWS ********************/
+
+.reviewCustContainer {
+	padding: 1em;
+}
+
+.reviewCust {
+	display: grid;
+	grid-row-gap: 1em;
+	align-items: center;
+}
+
+.reviewCustLeft {
+	grid-template-columns: 30% 70%;
+}
+
+.reviewCustRight {
+	grid-template-columns: 70% 30%;
+}
+
+.reviewCustText {
+	padding: 0 1em 0 1em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.reviewCustImg {
+	width: 100px;
+	border-radius: 50%;
+}
+
+
+/******************** FONT FORMATTING ********************/
+
+.fontStaff {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+/******************** SPEECH BUBBLES ********************/
+
+.speechBox {
+	width: 400px;
+	margin: 2em auto;
+	background-color: #999999;
+	color: #ffffff;
+	padding: 2em;
+	border-radius: 0.5em;
+	text-align: center;
+	position: relative;
+}
+
+.speechBoxTriA:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: -2em;
+	top: 2em;
+	border-left: 2em solid transparent;
+	border-right: 2em solid #999999;
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid #999999;
+}
+
+.speechBoxTriB:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	right: -2em;
+	top: 2em;
+	border-left: 2em solid #999999;
+	border-right: 2em solid transparent;
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid #999999;
+}
+
+/******************** FOOTER ********************/
+
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #999999;
+	text-align: center;
+}
