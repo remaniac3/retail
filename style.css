@@ -1,5 +1,6 @@
 html {
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -13,8 +14,73 @@ a {
 
 /******************** NAVBAR ********************/
 
-.navbarCenter {
+.navbar {
+	font-family: 'Baloo', cursive;
+	font-size: 2em;
+}
 
+.navbar-nav > li {
+	padding: 0 1em;
+}
+
+.navbarAppear {
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.navHoverAnim > a {
+	position: relative;
+	color: #769fcd;
+	text-decoration: none;
+}
+
+.navHoverAnim > a:hover {
+	color: #769fcd;
+}
+
+.navHoverAnim > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 10px;
+	left: 0;
+	background-color: #4e6a8a;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.navHoverAnim > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+/******************** INDEX BACKGROUND HERO ********************/
+
+.indexHero {
+	height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+.indexHeroIMG {
+	background-image: url("img/index_hero.jpg");
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+
+.whiteBG {
+	background-color: rgba(247, 251, 252);
+	height: 100vh;
+	z-index: 10;
 }
 
 
@@ -85,6 +151,10 @@ a {
 	text-align: right;
 	font-style: italic;
 	font-size: .75em;
+}
+
+.fontBlue4 {
+	color: #769fcd;	
 }
 
 
@@ -167,4 +237,28 @@ a {
 		right: -1.5em;
 		top: 2em;
 	}
+
+.hamburgColor {
+	font-size: 28px;
+	color: #769fcd;
+	}
+}
+
+
+/******************** BOOKMARK ********************/
+
+.colorA {
+	background-color: #f7fbfc;
+}
+
+.colorB {
+	background-color: #d6e6f2;
+}
+
+.colorC {
+	background-color: #b9d7ea;
+}
+
+.colorD {
+	background-color: #769fcd;
 }

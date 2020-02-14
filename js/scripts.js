@@ -1,12 +1,20 @@
-function reviewCustCToggle() {
-	let viewportWidth = window.innerWidth;
+$(document).ready(function(){
 
-	// if (viewportWidth <= 420) {
-	// 	if (document.getElementById("reviewCustC").classList.contains('speechBoxTriA')) {
-	// 		document.getElementById("reviewCustC").classList.add('speechBoxTriC');
-	// 		document.getElementById("reviewCustC").classList.remove('speechBoxTriA');
-	// 	}
-	// }
+	// Scroll down to make navbar background appear.
+    $(window).scroll(function(){
 
-	console.log(viewportWidth);
-}
+	    if($(window).scrollTop()>300)
+	    $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 1)"});
+
+	    else
+	    $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 0)"});
+
+	    });
+
+    // Fade out white div covering hero.
+    $(".whiteBG").fadeOut(1500);
+
+});
+
+
+
