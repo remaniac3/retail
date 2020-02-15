@@ -92,12 +92,29 @@ a {
 	max-width: 100%;
 }
 
+.containerFree {
+	padding: 2em 0;
+	width: 100%;
+	text-align: center;
+}
+
 .containerContent {
 	margin: 0 auto;
 	padding: 2em 0;
 	max-width: 960px;
 	text-align: center;
 	word-wrap: break-word;
+}
+
+
+/******************** OVERVIEW BACKGROUND HERO ********************/
+
+.overviewHero {
+	background-image: url("img/overview_hero.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 

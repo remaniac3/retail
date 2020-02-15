@@ -1,13 +1,32 @@
+let viewportWidth = $(window).width();
+
+// Upon page load.
 $(document).ready(function(){
 
 	// Scroll down to make navbar background appear.
     $(window).scroll(function(){
 
-	    if($(window).scrollTop()>300)
-	    $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 1)"});
+    	function navbarTransparent() { $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 0)"}); }
+    	function navbarSolid() { $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 1)"}); }
+    	
+    	// Desktop viewport.
+    	if (viewportWidth > 768) {
 
-	    else
-	    $(".navbarAppear").css({"background-color" : "rgba(247, 251, 252, 0)"});
+		    if($(window).scrollTop()>300)
+		    navbarSolid();
+
+		    else
+		    navbarTransparent();
+
+		// Mobile viewport.
+		} else {
+
+			if($(window).scrollTop()>600)
+		    navbarSolid();
+
+		    else
+		    navbarTransparent();
+		}
 
 	    });
 
