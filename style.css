@@ -100,7 +100,7 @@ a {
 
 .containerContent {
 	margin: 0 auto;
-	padding: 2em 0;
+	padding: 3em;
 	max-width: 960px;
 	text-align: center;
 	word-wrap: break-word;
@@ -241,21 +241,25 @@ a {
 		padding: 5em 2em 0 2em;
 	}
 
+	.containerContent {
+		padding: 3em;
+	}
+
 	.speechBox {
 		width: 100%;
 	}
 
-.speechBoxTriA:before {
+	.speechBoxTriA:before {
 		left: -1.5em;
 		top: 2em;
 	}
 
-.speechBoxTriB:before {
+	.speechBoxTriB:before {
 		right: -1.5em;
 		top: 2em;
 	}
 
-.hamburgColor {
+	.hamburgColor {
 	font-size: 28px;
 	color: #769fcd;
 	}
