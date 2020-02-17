@@ -184,13 +184,26 @@ h1 {
 	color: #769fcd;	
 }
 
+.fontTitle {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+/******************** IMAGES ********************/
+
+.imgFullWidth {
+	width: 100%;
+	border-radius: 1em;
+}
+
 
 /******************** SPEECH BUBBLES ********************/
 
 .speechBox {
 	width: 80%;
 	margin: 2em auto;
-	background-color: #999999;
+	background-color: #769fcd;
 	color: #ffffff;
 	padding: 2em;
 	border-radius: 0.5em;
@@ -206,9 +219,9 @@ h1 {
 	left: -3em;
 	top: 2em;
 	border-left: 2em solid transparent;
-	border-right: 2em solid #999999;
+	border-right: 2em solid #769fcd;
 	border-top: 1em solid transparent;
-	border-bottom: 1em solid #999999;
+	border-bottom: 1em solid #769fcd;
 }
 
 .speechBoxTriB:before {
@@ -218,10 +231,10 @@ h1 {
 	position: absolute;
 	right: -3em;
 	top: 2em;
-	border-left: 2em solid #999999;
+	border-left: 2em solid #769fcd;
 	border-right: 2em solid transparent;
 	border-top: 1em solid transparent;
-	border-bottom: 1em solid #999999;
+	border-bottom: 1em solid #769fcd;
 }
 
 /******************** FOOTER ********************/
