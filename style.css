@@ -1,10 +1,10 @@
 html {
-	font-family: sans-serif;
 	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0 auto;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -110,6 +110,13 @@ h1 {
 	word-wrap: break-word;
 }
 
+.containerFooter {
+	margin: 0 auto;
+	padding: 3em;
+	display: table;
+	color: #FFFFFF;
+}
+
 .containerTitle {
 	font-family: 'Baloo', cursive;
 	color: #769fcd;
@@ -172,12 +179,6 @@ h1 {
 .fontStaff {
 	text-transform: uppercase;
 	font-weight: 700;
-}
-
-.deviceType {
-	text-align: right;
-	font-style: italic;
-	font-size: .75em;
 }
 
 .fontBlue4 {
@@ -247,6 +248,19 @@ h1 {
 	text-align: center;
 }
 
+.footerTextContainer {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+p.footerText {
+	margin: 0;
+}
+
+p.footerText a {
+	color: #FFFFFF;
+}
+
 
 /******************** FONT AWESOME ********************/
 
@@ -265,7 +279,7 @@ h1 {
 	}
 
 	.containerContent {
-		padding: 3em;
+		padding: 3em 2em;
 	}
 
 	.speechBox {
@@ -285,6 +299,10 @@ h1 {
 	.hamburgColor {
 	font-size: 28px;
 	color: #769fcd;
+	}
+
+	.col-md-6 {
+		padding-bottom: 1em;
 	}
 }
 

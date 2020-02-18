@@ -21,11 +21,11 @@ $(document).ready(function(){
 		// Mobile viewport.
 		} else {
 
-			if($(window).scrollTop()>600)
-		    navbarSolid();
+			// if($(window).scrollTop()>600)
+		 //    navbarSolid();
 
-		    else
-		    navbarTransparent();
+		 //    else
+		    navbarSolid();
 		}
 
 	    });
